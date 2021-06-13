@@ -6,7 +6,6 @@ sen = list(map(int, sys.stdin.readline().split()))
 sen.sort()
 
 if k >= n:
-    print(0)
     sys.exit()
 
 dist = []
