@@ -1,3 +1,5 @@
-data = sorted("datata")
-print(data)
-print("이거 대체 왜이러니")
+B = 81
+if str(B)[-1] == '1':
+    B = int(str(B)[:-1])
+
+print(B)
