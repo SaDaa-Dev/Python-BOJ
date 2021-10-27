@@ -1,16 +1,15 @@
-n = 4
-l = 2
-data = [1, 2, 100, 101]
-data.sort
-cnt = 1
-start = data[0]
-end = data[0] + l
-for i in range(n):
-    if start <= data[i] < end:
-        continue
-    else:
-        start = data[i]
-        end = data[i] + l
-        cnt += 1
+import sys
+target = sys.stdin.readline().rstrip().upper()
+re = []
+reStr = []
+while True:
+    re.append(target.count(target[0]))
+    reStr.append(target[0])
+    target = target.replace(target[0], "")
+    if len(target) < 1:
+        break
 
-print(cnt)
+if re.count(max(re)) > 1:
+    print("?")
+else:
+    print(reStr[re.index(max(re))])
