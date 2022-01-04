@@ -1,15 +1,7 @@
-import sys
-target = sys.stdin.readline().rstrip().upper()
-re = []
-reStr = []
-while True:
-    re.append(target.count(target[0]))
-    reStr.append(target[0])
-    target = target.replace(target[0], "")
-    if len(target) < 1:
-        break
+a = 'adrenal', 'Esophagus', 'Renal pelvis, RCC', 'Larynx', 'Thyroid', 'GB', 'Bone Mets', 'Colon', 'Unk Primary', 'Lung', 'others', 'Leukemia', 'NS', 'Skin', 'Astrocytoma', 'Nasopharynx', 'Brain', 'NHL', 'adnexa', 'Brain Mets', 'Kidney', 'breast', 'RCC', 'Melanoma', 'Other CNS', 'Other UR', 'Corpus', 'Testis', 'Anus', 'Germ Cell', 'Biliary', 'Hypopharynx', 'Uterus', 'Breast', 'Lip & Oral', 'Colorectum', 'Other GO', 'Stomach', 'Biliary System', 'Bladder', 'OS & STS', 'Small intestine', 'Cervix', 'Ovary', 'Other Sarcoma', 'Pancreas', 'Other Skin', 'Rectum', 'Liver', 'Prostate', 'Unk Prim H&N', 'NC & PNS'
+print(len(a))
+b = '","'.join(a)
+print(b)
 
-if re.count(max(re)) > 1:
-    print("?")
-else:
-    print(reStr[re.index(max(re))])
+d = "adrenal", "Esophagus", "Renal pelvis, RCC", "Larynx", "Thyroid", "GB", "Bone Mets", "Colon", "Unk Primary", "Lung", "others", "Leukemia", "NS", "Skin", "Astrocytoma", "Nasopharynx", "Brain", "NHL", "adnexa", "Brain Mets", "Kidney", "breast", "RCC", "Melanoma", "Other CNS", "Other UR", "Corpus", "Testis", "Anus", "Germ Cell", "Biliary", "Hypopharynx", "Uterus", "Breast", "Lip & Oral", "Colorectum", "Other GO", "Stomach", "Biliary System", "Bladder", "OS & STS", "Small intestine", "Cervix", "Ovary", "Other Sarcoma", "Pancreas", "Other Skin", "Rectum", "Liver", "Prostate", "Unk Prim H&N", "NC & PNS"
+print(len(d))
